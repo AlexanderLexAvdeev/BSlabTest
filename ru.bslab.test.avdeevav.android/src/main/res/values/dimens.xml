@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app -->
+    <dimen name="edgePadding">16dp</dimen>
+    <dimen name="toolBarHeight">56dp</dimen>
+    <!-- gift card detail -->
+    <dimen name="giftCardDetailCoinsCountFontSize">34sp</dimen>
+    <dimen name="giftCardDetailCoinsLabelMarginLeft">8dp</dimen>
+    <dimen name="giftCardDetailCoinsLabelFontSize">24sp</dimen>
+    <dimen name="giftCardDetailCornerRadius">8dp</dimen>
+    <dimen name="giftCardDetailDescriptionFontSize">18sp</dimen>
+    <dimen name="giftCardDetailElevation">4dp</dimen>
+    <dimen name="giftCardDetailFooterHeight">65dp</dimen>
+    <dimen name="giftCardDetailHeight">178dp</dimen>
+    <dimen name="giftCardDetailLogoHeight">41dp</dimen>
+    <dimen name="giftCardDetailLogoWidth">95dp</dimen>
+    <dimen name="giftCardDetailPriceMarginLeft">46dp</dimen>
+    <dimen name="giftCardDetailPriceFontSize">34sp</dimen>
+    <dimen name="giftCardDetailWidth">328dp</dimen>
+    <!-- gift card list item -->
+    <dimen name="giftCardCoinsCountFontSize">20sp</dimen>
+    <dimen name="giftCardCoinsLabelMarginLeft">4dp</dimen>
+    <dimen name="giftCardCoinsLabelFontSize">15sp</dimen>
+    <dimen name="giftCardCornerRadius">4dp</dimen>
+    <dimen name="giftCardElevation">2dp</dimen>
+    <dimen name="giftCardFooterHeight">36dp</dimen>
+    <dimen name="giftCardHeight">96dp</dimen>
+    <dimen name="giftCardLogoHeight">28dp</dimen>
+    <dimen name="giftCardLogoWidth">44dp</dimen>
+    <dimen name="giftCardMarginHorizontal">4dp</dimen>
+    <dimen name="giftCardMarginVertical">12dp</dimen>
+    <dimen name="giftCardPriceMarginLeft">20dp</dimen>
+    <dimen name="giftCardPriceFontSize">20sp</dimen>
+    <dimen name="giftCardsOffsetHorizontal">12dp</dimen>
+    <dimen name="giftCardWidth">152dp</dimen>
+    <!-- provider list item -->
+    <dimen name="providerListItemNameFontSize">20sp</dimen>
+    <dimen name="providerListItemPaddingTop">12dp</dimen>
+    <dimen name="providerListItemsOffsetVertical">12dp</dimen>
+</resources>

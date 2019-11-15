@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".view.GiftCardDetailFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/giftCardDetail"
+            android:layout_width="@dimen/giftCardDetailWidth"
+            android:layout_height="@dimen/giftCardDetailHeight"
+            android:layout_margin="@dimen/edgePadding"
+            app:cardBackgroundColor="@color/colorGiftCardBackground"
+            app:cardCornerRadius="@dimen/giftCardDetailCornerRadius"
+            app:cardElevation="@dimen/giftCardDetailElevation"
+            app:cardPreventCornerOverlap="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/giftCardDetailFooter"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/giftCardDetailLogo"
+                        android:layout_width="@dimen/giftCardDetailLogoWidth"
+                        android:layout_height="@dimen/giftCardDetailLogoHeight"
+                        android:antialias="true"
+                        android:contentDescription="@string/giftCardLogoDescription"
+                        android:scaleType="centerInside"
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/giftCardDetailPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/giftCardDetailPriceMarginLeft"
+                        android:layout_toRightOf="@id/giftCardDetailLogo"
+                        android:textColor="@color/colorGiftCardPrice"
+                        android:textSize="@dimen/giftCardDetailPriceFontSize"
+                        android:textStyle="bold"
+                        app:fontFamily="sans-serif"
+                        tools:ignore="RtlHardcoded"
+                        tools:text="$0.00" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/giftCardDetailFooter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/giftCardDetailFooterHeight"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/gift_card_detail_amazon_footer_background">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:id="@+id/giftCardDetailCredits"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorGiftCardCoins"
+                            android:textSize="@dimen/giftCardDetailCoinsCountFontSize"
+                            android:textStyle="bold"
+                            app:fontFamily="sans-serif"
+                            tools:text="0,000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/giftCardDetailCoinsLabelMarginLeft"
+                            android:text="@string/giftCardCoinsLabel"
+                            android:textColor="@color/colorGiftCardCoins"
+                            android:textSize="@dimen/giftCardDetailCoinsLabelFontSize"
+                            android:textStyle="normal"
+                            app:fontFamily="sans-serif"
+                            tools:ignore="RtlHardcoded" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/giftCardDetailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/edgePadding"
+            android:layout_marginRight="@dimen/edgePadding"
+            android:layout_marginBottom="@dimen/edgePadding"
+            android:textColor="@color/colorGiftCardDescription"
+            android:textSize="@dimen/giftCardDetailDescriptionFontSize"
+            android:textStyle="normal"
+            app:fontFamily="sans-serif-medium"
+            tools:text="description" />
+
+    </LinearLayout>
+
+</ScrollView>

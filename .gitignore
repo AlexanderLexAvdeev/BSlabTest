@@ -1,0 +1,8 @@
+﻿/.idea
+/.gradle
+/.git
+/build
+ru.bslab.test.avdeevav.android/build
+ru.bslab.test.avdeevav.android/release
+*.iml
+local.properties

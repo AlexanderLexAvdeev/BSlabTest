@@ -1,0 +1,10 @@
+<resources>
+    <!-- app -->
+    <string name="appName">BS lab Test</string>
+    <!-- errors -->
+    <string name="noConnection">No connection</string>
+    <string name="connectionError">Connection error</string>
+    <!-- gift card -->
+    <string name="giftCardCoinsLabel">coins</string>
+    <string name="giftCardLogoDescription">gift card logo</string>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/giftCard"
+    android:layout_width="@dimen/giftCardWidth"
+    android:layout_height="@dimen/giftCardHeight"
+    android:layout_marginLeft="@dimen/giftCardMarginHorizontal"
+    android:layout_marginTop="@dimen/giftCardMarginVertical"
+    android:layout_marginRight="@dimen/giftCardMarginHorizontal"
+    android:layout_marginBottom="@dimen/giftCardMarginVertical"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/colorGiftCardBackground"
+    app:cardCornerRadius="@dimen/giftCardCornerRadius"
+    app:cardElevation="@dimen/giftCardElevation"
+    app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/giftCardFooter">
+
+            <ImageView
+                android:id="@+id/giftCardLogo"
+                android:layout_width="@dimen/giftCardLogoWidth"
+                android:layout_height="@dimen/giftCardLogoHeight"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/edgePadding"
+                android:antialias="true"
+                android:contentDescription="@string/giftCardLogoDescription"
+                android:scaleType="centerInside"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/giftCardPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/giftCardPriceMarginLeft"
+                android:layout_toRightOf="@id/giftCardLogo"
+                android:textColor="@color/colorGiftCardPrice"
+                android:textSize="@dimen/giftCardPriceFontSize"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif"
+                tools:ignore="RtlHardcoded"
+                tools:text="$0.00" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/giftCardFooter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/giftCardFooterHeight"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gift_card_amazon_footer_background">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/giftCardCredits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorGiftCardCoins"
+                    android:textSize="@dimen/giftCardCoinsCountFontSize"
+                    android:textStyle="bold"
+                    app:fontFamily="sans-serif"
+                    tools:text="0,000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/giftCardCoinsLabelMarginLeft"
+                    android:text="@string/giftCardCoinsLabel"
+                    android:textColor="@color/colorGiftCardCoins"
+                    android:textSize="@dimen/giftCardCoinsLabelFontSize"
+                    android:textStyle="normal"
+                    app:fontFamily="sans-serif"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
